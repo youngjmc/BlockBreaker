@@ -1,4 +1,5 @@
 name: ObsidianBreaker
 main: Muqsit\Main
-api: [1.13.1, 2.0.0]
-version: 1.0
+api: [3.0.0-ALPHA7, 3.0.1]
+version: 1.0.0-BETA
+author: Muqsit

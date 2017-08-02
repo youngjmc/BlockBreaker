@@ -2,9 +2,9 @@
 
 namespace Muqsit;
 
-use pocketmine\block\Obsidian as PmObsidian;
+use pocketmine\block\Bedrock as PmBedrock;
 
-class Obsidian extends PmObsidian{
+class Bedrock extends PmBedrock{
 	
 	public function getResistance(){
 		return 10;

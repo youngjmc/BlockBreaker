@@ -14,7 +14,7 @@ class Main extends PluginBase implements Listener{
 
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    $this->registerBlock(self::BEDROCK, Bedrock::class);
+    $this->registerBlock(self::Bedrock, Bedrock::class);
   }
   public function registerBlock($id, $class){
     Block::$list[$id] = $class;

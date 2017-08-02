@@ -6,15 +6,15 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\utils\TextFormat as TF;
-use Muqsit\Obsidian;
+use Muqsit\Bedrock;
 
 class Main extends PluginBase implements Listener{
 
-  const OBSIDIAN = 49;
+  const Bedrock = 7;
 
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    $this->registerBlock(self::OBSIDIAN, Obsidian::class);
+    $this->registerBlock(self::BEDROCK, Bedrock::class);
   }
   public function registerBlock($id, $class){
     Block::$list[$id] = $class;
@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener{
   public function onTap(PlayerInteractEvent $e){
     $p = $e->getPlayer();
     $block = $e->getBlock();
-    if($p->getInventory()->getItemInHand()->getId() === 392 && $block->getId() === 49){
+    if($p->getInventory()->getItemInHand()->getId() === 392 && $block->getId() === 7){
       $h = $block->getHardness();
       
       if($h >= 37.5){

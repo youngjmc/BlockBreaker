@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener{
   public function onTap(PlayerInteractEvent $e){
     $p = $e->getPlayer();
     $block = $e->getBlock();
-    if($p->getInventory()->getItemInHand()->getId() === 392 && $block->getId() === 49){
+    if($p->getInventory()->getItemInHand()->getId() === 46 && $block->getId() === 49){
       $h = $block->getHardness();
       
       if($h >= 37.5){

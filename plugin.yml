@@ -1,5 +1,5 @@
 name: BedrockBreaker
 main: Muqsit\Main
-api: [1.13.1, 2.0.0]
+api: 3.00
 version: 1.0
 author: Zeao
